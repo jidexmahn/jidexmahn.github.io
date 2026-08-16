@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jidexmahn | E-commerce Specialist</title>
+
+    <meta name="description" content="Jidexmahn is an E-commerce Specialist helping businesses build, optimize and grow successful online stores.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #07110d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        :root {
+           --gold: #D4AF37;
+--gold-light: #F4D06F;
+--black: #050505;
+--dark: #0A0A0A;
+--dark-2: #111111;
+--card: #151515;
+--text: #FFFFFF;
+--muted: #A7A7A7;
+--border: rgba(212, 175, 55, 0.18);
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(7, 17, 13, 0.82);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+   .logo {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    flex-shrink: 0;
+}
+
+    .logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+        .nav-links a {
+            color: #dbe7e1;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+    color: var(--gold);
+        }
+
+        .nav-button {
+            padding: 11px 20px;
+            border-radius: 30px;
+            background: var(--green);
+            color: #03150d;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            background: #28df91;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+            padding: 150px 25px 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(212, 175, 55, 0.13);
+            filter: blur(100px);
+            border-radius: 50%;
+            top: 10%;
+            left: -150px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            
+        
+            filter: blur(100px);
+            border-radius: 50%;
+            right: -150px;
+            bottom: 0;
+        }
+
+        .hero-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .small-title {
+            color: var(--green);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 6vw, 78px);
+            line-height: 1.02;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--green);
+        }
+
+        .hero-text {
+            max-width: 650px;
+            color: var(--muted);
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+.btn-primary {
+    background: var(--gold);
+    color: #050505;
+}
+        
+
+        .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(229,184,75,0.25);
+}
+
+        .btn-secondary {
+            border: 1px solid var(--border);
+            color: #fff;
+            background: rgba(255,255,255,0.03);
+        }
+
+        .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+        }
+
+        /* PROFILE */
+
+        .profile-area {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+ .profile-card {
+    width: 370px;
+    height: 470px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #151515, #050505);
+    border: 1px solid rgba(229,184,75,0.25);
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    background: #0a0a0a;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+        .profile-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(229,184,75,0.18), transparent 35%),
+        linear-gradient(145deg, #1a1a1a, #080808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+        .profile-placeholder-content {
+            border: 1px dashed rgba(255,255,255,0.2);
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        .profile-placeholder strong {
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .profile-placeholder p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 100px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-heading .label {
+            color: var(--green);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(34px, 5vw, 52px);
+            line-height: 1.1;
+            margin: 15px 0;
+            letter-spacing: -2px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: var(--dark-2);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            padding: 35px;
+        }
+
+        .about-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            color: var(--muted);
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .stat {
+            padding: 25px;
+            border-radius: 18px;
+            background: #0a1712;
+            border: 1px solid var(--border);
+        }
+
+        .stat strong {
+            font-size: 30px;
+            color: var(--green);
+            display: block;
+        }
+
+        .stat span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(229,184,75,0.4);
+}
+
+        .service-number {
+            color: var(--gold);
+            font-weight: 800;
+            font-size: 13px;
+        }
+
+        .service-card h3 {
+            margin: 25px 0 12px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           PORTFOLIO
+        ========================= */
+
+        .portfolio {
+            background: var(--dark-2);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+    overflow: hidden;
+    border-radius: 25px;
+    background: var(--card);
+    border: 1px solid var(--border);
+}
+.project-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(135deg, rgba(229,184,75,0.18), rgba(0,0,0,0.85)),
+        #0a0a0a;
+    font-size: 28px;
+    font-weight: 800;
+    color: #e5b84b;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border-bottom: 1px solid rgba(229,184,75,0.25);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+        
+
+    .project .project-info {
+    padding: 24px 26px 32px !important;
+    box-sizing: border-box;
+}
+.project-info > * {
+    margin-left: 26px !important;
+    margin-right: 26px !important;
+}
+
+.project-info {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+}
+.project-info h3 {
+    margin: 8px 0 12px;
+    line-height: 1.25;
+}
+
+.project-info p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+        /* =========================
+           TESTIMONIALS
+        ========================= */
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            padding: 30px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+        }
+
+        .stars {
+            color: var(--gold);
+            margin-bottom: 18px;
+        }
+
+        .testimonial p {
+            color: #c0ccc7;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .client {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .client-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--green);
+            color: #03150d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .client strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .client span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-box {
+    background:
+        radial-gradient(circle at top right, rgba(229,184,75,0.15), transparent 40%),
+        var(--card);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 70px 50px;
+    text-align: center;
+}
+
+        .contact-box h2 {
+            font-size: clamp(35px, 5vw, 55px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .contact-box p {
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 25px;
+            background: #050c09;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer-brand {
+            font-weight: 800;
+        }
+
+        .footer-brand span {
+            color: var(--green);
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    position: static;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: right;
+    z-index: auto;
+    flex-shrink: 1;
+}
+
+.nav-links a {
+    font-size: 9px;
+    white-space: nowrap;
+}
+}
+
+  .hero-container {
+    grid-template-columns: 1fr;
+}
+
+.about-grid {
+    grid-template-columns: 1fr;
+}
+
+.about-grid {
+    grid-template-columns: 1fr;
+}
+
+            .hero {
+                padding-top: 130px;
+            }
+
+            .profile-area {
+                margin-top: 20px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+
+        @media (max-width: 600px) {
+
+            .navbar {
+    padding: 15px 18px;
+    position: relative;
+}
+
+            .nav-button {
+                display: none;
+            }
+
+            section {
+                padding: 75px 18px;
+            }
+
+            .hero {
+                padding: 120px 18px 70px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .profile-card {
+                width: 100%;
+                max-width: 340px;
+                height: 420px;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 50px 25px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }@media (max-width: 900px) {
+
+    .navbar {
+        padding: 14px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        overflow: hidden;
+    }
+
+    .logo {
+        font-size: 18px !important;
+        font-weight: 800;
+        letter-spacing: -1px;
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 7px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .nav-links a {
+        font-size: 9px !important;
+        white-space: nowrap;
+    }
+
+    .nav-button {
+        display: none;
+    }
+}/* DESKTOP HERO LAYOUT */
+@media (min-width: 901px) {
+    .hero-container {
+        display: grid !important;
+        grid-template-columns: 1.1fr 0.9fr !important;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .profile-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Jidex<span>mahn</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-button">
+                Let's Work Together
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <div class="small-title">
+    E-commerce Specialist
+</div>
+
+<h1>
+    I Help Businesses
+    <span>Grow & Sell Online.</span>
+                    </h1>
+
+                    <p class="hero-text">
+    I help businesses build, optimize and grow
+    high-performing e-commerce stores through strategic design,
+    product research, SEO, marketing and conversion-focused solutions.
+</p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#portfolio" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Let's Work Together
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-area">
+
+                    <div class="profile-card">
+
+                      <div class="profile-photo">
+    <img src="profile.jpg" alt="Jidexmahn - E-commerce Specialist">
+</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="label">About Me</span>
+
+<h2>
+    Helping Businesses Build Better E-commerce Stores.
+</h2>
+
+<p>
+    I help businesses create, optimize and grow professional
+    e-commerce stores through strategic design, product research,
+    SEO, marketing and conversion-focused solutions.
+</p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-box">
+
+                        <h3>
+                            E-commerce Strategy
+                        </h3>
+
+                        <p>
+    I help businesses build stronger online brands and create
+    e-commerce experiences that are clear, professional and
+    designed with the customer in mind.
+</p>
+
+<p>
+    From Shopify store design and product research to SEO,
+    email marketing and advertising, I provide practical
+    solutions focused on growth and conversions.
+</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p style="color: var(--muted); margin-bottom: 20px;">
+                            My approach combines creative design, market research,
+                            optimization and digital marketing to help e-commerce
+                            businesses build a stronger foundation for growth.
+                        </p>
+
+                        <div class="stats">
+
+                            <div class="stat">
+                                <strong>09+</strong>
+                                <span>E-commerce Services</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>100%</strong>
+                                <span>Client-Focused Approach</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>24/7</strong>
+                                <span>Online Business Potential</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>∞</strong>
+                                <span>Growth Opportunities</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+    <span class="label">What I Do</span>
+
+    <h2>
+        E-commerce Services
+    </h2>
+
+    <p>
+        Practical solutions designed to help your online business
+        look better, perform better and grow.
+    </p>
+
+</div>
+
+                    <p>
+                        Practical solutions designed to help your online business
+                        look better, perform better and grow.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+    <div class="service-card">
+        <span class="service-number">01</span>
+        <h3>Shopify Store Design</h3>
+        <p>
+            Professional Shopify store design focused on branding,
+            usability and conversion.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <span class="service-number">02</span>
+        <h3>Shopify Store Redesign</h3>
+        <p>
+            Transforming outdated stores into modern and
+            customer-friendly shopping experiences.
+        </p>
+    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <h3>Product Research</h3>
+                        <p>
+                            Researching products and opportunities with strong
+                            potential for e-commerce businesses.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">04</span>
+                        <h3>SEO</h3>
+                        <p>
+                            Improving store visibility through search engine
+                            optimization and better on-page structure.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">05</span>
+                        <h3>Email Marketing</h3>
+                        <p>
+                            Strategic email campaigns and customer communication
+                            designed to support retention and sales.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">06</span>
+                        <h3>Facebook Ads</h3>
+                        <p>
+                            Helping businesses reach targeted audiences through
+                            strategic Facebook advertising.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">07</span>
+                        <h3>Google Ads</h3>
+                        <p>
+                            Search-focused advertising strategies designed to
+                            connect businesses with potential customers.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">08</span>
+                        <h3>Store Management</h3>
+                        <p>
+                            Ongoing support for product management, store updates,
+                            optimization and e-commerce operations.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="service-number">09</span>
+                        <h3>Store Optimization</h3>
+                        <p>
+                            Identifying opportunities to improve performance,
+                            usability, trust and conversion.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PORTFOLIO -->
+
+        <section class="portfolio" id="portfolio">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="label">Selected Work</span>
+
+                    <h2>
+                        My Portfolio
+                    </h2>
+
+                    <p>
+                        A selection of e-commerce projects and digital solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-grid">
+
+   <div class="project">
+
+    <div class="project-image">
+<img src="portfolio/shopify-store-design.png" alt="Shopify Store Design">
+</div>
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • SHOPIFY
+        </span>
+
+        <h3>Shopify Store Design</h3>
+
+        <p>
+            A modern, conversion-focused Shopify store designed
+            to build trust, improve user experience and turn
+            visitors into customers.
+        </p>
+
+    </div>
+
+</div>
+
+
+   <div class="project">
+
+    <div class="project-image">
+        <img src="portfolio/store-redesign.png" alt="Store Redesign">
+    </div>
+
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • REDESIGN
+        </span>
+
+        <h3>Store Redesign</h3>
+
+        <p>
+            A complete visual and structural redesign focused
+            on improving the customer experience, building
+            trust and increasing store conversions.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="project">
+
+    <div class="project-image">
+    <img src="portfolio/ecommerce-optimization.png" alt="E-commerce Optimization">
+</div>
+
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • OPTIMIZATION
+        </span>
+
+        <h3>E-commerce Optimization</h3>
+
+        <p>
+            Store optimization focused on improving usability,
+            customer trust, user experience and conversion
+            performance.
+        </p>
+
+    </div>
+
+</div>
+<div class="project">
+
+    <div class="project-image">
+        <img src="portfolio/ecommerce-seo.png" alt="E-commerce SEO">
+    </div>
+
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • SEO
+        </span>
+
+        <h3>SEO</h3>
+
+        <p>
+            SEO strategies focused on improving search visibility,
+            attracting qualified organic traffic and helping
+            e-commerce stores grow sustainably.
+        </p>
+
+    </div>
+
+</div>
+<div class="project">
+
+    <div class="project-image">
+        <span>FACEBOOK ADS</span>
+    </div>
+
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • PAID ADS
+        </span>
+
+        <h3>Facebook Ads</h3>
+
+        <p>
+            Targeted Facebook advertising strategies designed
+            to reach potential customers, generate quality
+            traffic and support e-commerce sales.
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="project">
+
+    <div class="project-image">
+        <span>E-COMMERCE MARKETING</span>
+    </div>
+
+    <div class="project-info">
+
+        <span class="project-category">
+            E-COMMERCE • MARKETING
+        </span>
+
+        <h3>E-commerce Marketing</h3>
+
+        <p>
+            Strategic marketing solutions designed to attract
+            qualified customers, strengthen brand visibility
+            and support sustainable online growth.
+        </p>
+
+    </div>
+
+</div>
+        </section>
+
+
+        <!-- TESTIMONIALS -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="label">Client Feedback</span>
+
+                    <h2>
+                        What Clients Say
+                    </h2>
+
+                    <p>
+                        Sample testimonials for the portfolio layout.
+                        These can be replaced with verified client reviews later.
+                    </p>
+
+                </div>
+
+
+                <div class="testimonial-grid">
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "Jidex understood exactly what my store needed.
+                            The new structure made the website feel much more
+                            professional and easier to navigate."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">AM</div>
+                            <div>
+                                <strong>Alex Morgan</strong>
+                                <span>E-commerce Business Owner</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "The attention to detail was impressive. The store
+                            looks cleaner, more professional and much easier
+                            for customers to use."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">SJ</div>
+                            <div>
+                                <strong>Sarah Johnson</strong>
+                                <span>Online Store Owner</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "Very professional approach from start to finish.
+                            The research and recommendations gave me a much
+                            clearer direction for my business."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">DM</div>
+                            <div>
+                                <strong>Daniel Miller</strong>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "I wanted my store to look more trustworthy and
+                            professional, and the improvements made a big
+                            difference."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">EC</div>
+                            <div>
+                                <strong>Emily Carter</strong>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "Great communication and a strong understanding
+                            of e-commerce. I would definitely recommend the
+                            service."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">JW</div>
+                            <div>
+                                <strong>James Wilson</strong>
+                                <span>Founder</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial">
+
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "The strategy was clear and practical. I now have
+                            a much better understanding of what my store needs
+                            to improve."
+                        </p>
+
+                        <div class="client">
+                            <div class="client-avatar">OL</div>
+                            <div>
+                                <strong>Olivia Lee</strong>
+                                <span>E-commerce Entrepreneur</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <span class="label">
+                        Let's Work Together
+                    </span>
+
+                    <h2>
+                        Ready to Grow Your<br>
+                        E-commerce Business?
+                    </h2>
+
+                    <p>
+                        Whether you need a new Shopify store, store optimization,
+                        product research or a complete e-commerce strategy,
+                        let's discuss your project.
+                    </p>
+
+                    <a href="mailto:jidexmahn@gmail.com" class="btn btn-primary">
+                        Contact Me
+                    </a>
+
+                    <br>
+
+                    <a href="mailto:jidexmahn@gmail.com" class="email">
+                        jidexmahn@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                Jidex<span>mahn</span>
+            </div>
+
+            <p>
+                © 2026 Jidexmahn. All rights reserved.
+            </p>
+
+            <p>
+                E-commerce Specialist
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        // Simple page-load animation
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+
+                document.body.style.transition = "opacity 0.8s ease";
+
+                document.body.style.opacity = "1";
+
+            }, 100);
+
+        });
+
+    </script>
+
+</body>
+</html>
